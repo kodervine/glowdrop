@@ -1,7 +1,8 @@
-import { View, FlatList, TouchableOpacity, StyleSheet } from "react-native";
+import { View, FlatList, StyleSheet } from "react-native";
 import { ThemedButton } from "@/components/ThemedButton";
 import { router } from "expo-router";
 import { ThemedText } from "../../components/ThemedText";
+import { Card } from "react-native-paper";
 
 const RoutineScreen = () => {
   const skincareEntries = [
@@ -22,18 +23,18 @@ const RoutineScreen = () => {
   ];
 
   const renderLogItem = ({ item }: any) => (
-    <TouchableOpacity style={styles.logItem}>
+    <Card>
       <ThemedText style={styles.date}>{item.date}</ThemedText>
       <ThemedText style={styles.product}>Product: {item.product}</ThemedText>
       <ThemedText style={styles.reaction}>Reaction: {item.reaction}</ThemedText>
       <ThemedText style={styles.notes}>Notes: {item.notes}</ThemedText>
-    </TouchableOpacity>
+    </Card>
   );
 
   return (
     <View style={styles.container}>
       <ThemedText style={styles.title}>Your Skincare Log</ThemedText>
-      <ThemedButton onPress={() => router.navigate("/(app)\routine-form")}>
+      <ThemedButton onPress={() => router.navigate("/routine-form")}>
         Add Entry
       </ThemedButton>
 

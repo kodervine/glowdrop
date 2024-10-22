@@ -17,6 +17,10 @@ export default function RootLayout() {
     OpenSansSemiBold: require("../assets/fonts/OpenSansSemiBold.ttf"),
     OpenSansBold: require("../assets/fonts/OpenSansBold.ttf"),
     OpenSansMedium: require("../assets/fonts/OpenSansMedium.ttf"),
+    OutfitRegular: require("../assets/fonts/OutfitRegular.ttf"),
+    OutfitSemiBold: require("../assets/fonts/OutfitSemiBold.ttf"),
+    OutfitBold: require("../assets/fonts/OutfitBold.ttf"),
+    OutfitMedium: require("../assets/fonts/OutfitMedium.ttf"),
   });
 
   useEffect(() => {

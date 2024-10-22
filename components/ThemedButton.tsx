@@ -2,6 +2,7 @@ import { Button, ButtonProps } from "react-native-paper";
 import { useColorScheme } from "@/hooks/useColorScheme.web";
 import { Colors } from "@/constants/Colors";
 import { ColorSchemeName } from "react-native";
+import { ThemedText } from "@/components/ThemedText";
 
 export function ThemedButton({ style, children, ...rest }: ButtonProps) {
   const colorScheme = (useColorScheme() as ColorSchemeName) ?? "light";
@@ -13,7 +14,7 @@ export function ThemedButton({ style, children, ...rest }: ButtonProps) {
       style={style}
       {...rest}
     >
-      {children}
+      <ThemedText>{children}</ThemedText>
     </Button>
   );
 }
