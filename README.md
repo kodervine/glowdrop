@@ -1,50 +1,98 @@
-# Welcome to your Expo app 👋
+# Glowdrop
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Glowdrop is a **Professional Service & Beauty Product App** designed to help users connect with top-rated beauty professionals, discover products, and create personalized beauty routines. Built with **React Native** and **TypeScript**, Glowdrop combines service booking with product recommendations to deliver a comprehensive beauty and self-care experience.
 
-## Get started
+---
 
-1. Install dependencies
+## Tech Stack
 
+- **React Native**: For creating a cross-platform mobile application that runs on both iOS and Android.
+- **TypeScript**: Used for type safety, enhancing code maintainability, and ensuring a robust development experience.
+  
+---
+
+## Features
+
+### Professional Services
+- **Professional Profiles**: Detailed profiles for each beauty professional, showcasing:
+  - **About** section
+  - **Services** with descriptions, durations, and prices
+  - **Availability** schedule by day
+  - **Contact Information** (phone number, email, and address)
+  - **Reviews** from clients, with ratings and comments
+
+- **User Actions**:
+  - Bookmark professionals for easy access
+  - Book services directly from the profile page
+  - Filter by ratings, price, and availability
+
+### Product Discovery
+- **Beauty Products**: Browse a curated list of beauty products recommended by professionals.
+- **Product Details**: View detailed information for each product, including benefits, ingredients, and user reviews.
+<!-- - **Add to Routine**: Easily add products to a personal beauty routine for daily use. -->
+
+### Personalized Routine
+- **Routine Builder**: Create and manage a personalized routine by adding selected products and specifying usage frequency.
+<!-- - **Reminders**: Set reminders for specific routine steps, helping users maintain their beauty regimen. -->
+
+---
+
+## App Screenshots
+
+Here are some demo pictures of the Glowdrop app, showcasing its user-friendly interface and features:
+
+| Screen          | Screenshot                                |
+|------------------|------------------------------------------|
+| Home Screen      | ![Home Screen](assets/images/demopic3.jpg)  |
+| Professional List| ![Professional List](assets/screens/demopic8.jpg) |
+| Product Details  | ![Product Details](assets/screens/demopic1.jpg) |
+| Routine Builder   | ![Routine Builder](assets/screens/demopic2.jpg) |
+
+---
+
+## Design Inspiration
+
+Glowdrop’s sleek and modern design draws inspiration from the following Dribbble concepts, blending clean layouts with engaging visuals:
+- [Beauty Service App UI](https://dribbble.com/shots/22017249-Beauty-Service-App-UI): Provided inspiration for the color scheme and general aesthetic, specifically the home screen, artists/professional listing, professional detail screens.
+- [Home Cleaning Service App UI](https://dribbble.com/shots/21975282-Home-Cleaning-Service-App-UI): Influenced the product detail screen.
+- [Skin Care App Design](https://dribbble.com/shots/21700382-Skin-Care-App-design): Provided inspiration for the product and routine sections.
+- [Inventory App Design](https://dribbble.com/shots/24566846-Inventory-app-Profile): Provided inspiration for the account section.
+
+---
+
+## Getting Started
+
+1. **Clone the Repository**:
    ```bash
+   git clone https://github.com/kodervine/glowdrop.git
+   ```
+2. **Install Dependencies**:
+   ```bash
+   cd glowdrop
    npm install
    ```
-
-2. Start the app
-
+3. **Run the App**:
    ```bash
-    npx expo start
+   npx expo start # or npm run ios for iOS
    ```
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Folder Structure
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **components**: Contains reusable UI components used throughout the app.
+- **screens**: Major screens like Home, Artists, Routine, Products, and Routine.
+- **assets**: Includes images, icons, and other static files.
+- **types**: TypeScript interfaces and types for data consistency across components.
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## License
 
-```bash
-npm run reset-project
-```
+This project is licensed under the MIT License.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+Glowdrop is your one-stop beauty service and product app, built to provide a streamlined experience in booking services, discovering products, and maintaining a beauty routine. Enjoy the ultimate in beauty and self-care with Glowdrop!
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
