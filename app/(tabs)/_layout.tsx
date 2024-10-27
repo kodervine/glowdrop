@@ -1,5 +1,4 @@
 import { Tabs } from "expo-router";
-
 import { TabBarIcon } from "@/components/navigation/TabBarIcon";
 import { Colors } from "@/constants/Colors";
 import { useColorScheme } from "@/hooks/useColorScheme";
@@ -18,6 +17,9 @@ export default function TabLayout() {
         name="home"
         options={{
           title: "Home",
+          tabBarLabelStyle: {
+            fontFamily: "OutfitRegular",
+          },
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
               name={focused ? "home" : "home-outline"}
@@ -26,7 +28,7 @@ export default function TabLayout() {
           ),
         }}
       />
-      <Tabs.Screen
+      {/* <Tabs.Screen
         name="appointments"
         options={{
           title: "Appointments",
@@ -37,14 +39,26 @@ export default function TabLayout() {
             />
           ),
         }}
-      />
+      /> */}
       <Tabs.Screen
-        name="professional-list"
+        name="professionals"
         options={{
-          title: "Professionals",
+          title: "Artists",
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
               name={focused ? "people-circle" : "people-circle-outline"}
+              color={color}
+            />
+          ),
+        }}
+      />{" "}
+      <Tabs.Screen
+        name="products"
+        options={{
+          title: "Products",
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon
+              name={focused ? "list-circle" : "list-circle-outline"}
               color={color}
             />
           ),

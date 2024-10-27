@@ -61,7 +61,7 @@ const AuthHomeScreen = () => {
           <ThemedText type="title">Welcome to Glowdrop!</ThemedText>
           <ThemedText type="subtitle">Let's log you in</ThemedText>
           <ThemedButton onPress={() => router.navigate("/(tabs)/home")}>
-            Sign in with Google
+            <ThemedText lightColor="white">Continue</ThemedText>
           </ThemedButton>
         </ThemedView>
       </ThemedView>
@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   topSection: {
-    height: height * 0.6,
+    height: height * 0.8,
     justifyContent: "center",
     alignItems: "center",
     position: "relative",
@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
     shadowRadius: 3,
     elevation: 5,
     position: "absolute",
-    top: -60, // Adjust the card to overlap the bottom section
+    top: -190, // Adjust the card to overlap the bottom section
     flex: 1,
     flexDirection: "column",
     justifyContent: "center",

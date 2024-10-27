@@ -1,31 +1,31 @@
-import { Text, type TextProps, StyleSheet } from 'react-native';
+import { Text, type TextProps, StyleSheet, Platform } from "react-native";
 
-import { useThemeColor } from '@/hooks/useThemeColor';
+import { useThemeColor } from "@/hooks/useThemeColor";
 
 export type ThemedTextProps = TextProps & {
   lightColor?: string;
   darkColor?: string;
-  type?: 'default' | 'title' | 'defaultSemiBold' | 'subtitle' | 'link';
+  type?: "default" | "title" | "defaultSemiBold" | "subtitle" | "link";
 };
 
 export function ThemedText({
   style,
   lightColor,
   darkColor,
-  type = 'default',
+  type = "default",
   ...rest
 }: ThemedTextProps) {
-  const color = useThemeColor({ light: lightColor, dark: darkColor }, 'text');
+  const color = useThemeColor({ light: lightColor, dark: darkColor }, "text");
 
   return (
     <Text
       style={[
         { color },
-        type === 'default' ? styles.default : undefined,
-        type === 'title' ? styles.title : undefined,
-        type === 'defaultSemiBold' ? styles.defaultSemiBold : undefined,
-        type === 'subtitle' ? styles.subtitle : undefined,
-        type === 'link' ? styles.link : undefined,
+        type === "default" ? styles.default : undefined,
+        type === "title" ? styles.title : undefined,
+        type === "defaultSemiBold" ? styles.defaultSemiBold : undefined,
+        type === "subtitle" ? styles.subtitle : undefined,
+        type === "link" ? styles.link : undefined,
         style,
       ]}
       {...rest}
@@ -47,14 +47,14 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 32,
-    fontWeight: "bold",
+    // no fontweight if custom font - https://stackoverflow.com/a/55717885/18892335
+    // fontWeight: "bold",
     lineHeight: 32,
     fontFamily: "OutfitBold",
   },
   subtitle: {
-    fontSize: 20,
-    fontWeight: "bold",
-    fontFamily: "OutfitBold",
+    fontSize: 18,
+    fontFamily: "OpenSansBold",
   },
   link: {
     lineHeight: 30,
@@ -62,4 +62,13 @@ const styles = StyleSheet.create({
     color: "#0a7ea4",
     fontFamily: "OutfitMedium",
   },
+  bold:
+    Platform.OS === "ios"
+      ? {
+          fontFamily: "OutfitRegular",
+          fontWeight: "bold",
+        }
+      : {
+          fontFamily: "OutfitBold",
+        },
 });

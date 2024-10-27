@@ -14,12 +14,8 @@ export default function AppLayout() {
           headerShown: false,
         }}
       />
-
-      {/* Material Top Tabs as a nested navigator within Stack */}
-      <Stack.Screen
-        name="professional-detail-tabs"
-        options={{ headerShown: false }}
-      />
+      <Stack.Screen name="product-form" options={{ headerShown: false }} />
+      <Stack.Screen name="product-detail" options={{ headerShown: false }} />
     </Stack>
   );
 }
