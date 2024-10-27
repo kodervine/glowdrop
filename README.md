@@ -43,9 +43,13 @@ Here are some demo pictures of the Glowdrop app, showcasing its user-friendly in
 
 | Screen          | Screenshot                                |
 |------------------|------------------------------------------|
+| Auth Screen      | ![Home Screen](assets/images/demopic-7.jpg)  |
 | Home Screen      | ![Home Screen](assets/images/demopic-3.jpg)  |
 | Professional List| ![Professional List](assets/images/demopic-8.jpg) |
-| Product Details  | ![Product Details](assets/images/demopic-1.jpg) |
+| Professional Detail About Tab screen| ![Professional Detail About](assets/images/demopic-4.jpg) |
+| Professional Detail Services Tab screen| ![Professional Detail Services](assets/images/demopic-5.jpg) |
+| Professional Detail Reviews Tab screen  | ![Professional Detail Reviews](assets/images/demopic-1.jpg) |
+| Product Details  | ![Product Details](assets/images/demopic-6.jpg) |
 | Routine Builder   | ![Routine Builder](assets/images/demopic-2.jpg) |
 
 ---
@@ -84,12 +88,6 @@ Glowdrop’s sleek and modern design draws inspiration from the following Dribbb
 - **screens**: Major screens like Home, Artists, Routine, Products, and Routine.
 - **assets**: Includes images, icons, and other static files.
 - **types**: TypeScript interfaces and types for data consistency across components.
-
----
-
-## License
-
-This project is licensed under the MIT License.
 
 ---
 
