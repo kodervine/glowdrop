@@ -43,10 +43,10 @@ Here are some demo pictures of the Glowdrop app, showcasing its user-friendly in
 
 | Screen          | Screenshot                                |
 |------------------|------------------------------------------|
-| Home Screen      | ![Home Screen](assets/images/demopic3.jpg)  |
-| Professional List| ![Professional List](assets/screens/demopic8.jpg) |
-| Product Details  | ![Product Details](assets/screens/demopic1.jpg) |
-| Routine Builder   | ![Routine Builder](assets/screens/demopic2.jpg) |
+| Home Screen      | ![Home Screen](assets/images/demopic-3.jpg)  |
+| Professional List| ![Professional List](assets/images/demopic-8.jpg) |
+| Product Details  | ![Product Details](assets/images/demopic-1.jpg) |
+| Routine Builder   | ![Routine Builder](assets/images/demopic-2.jpg) |
 
 ---
 
@@ -93,6 +93,6 @@ This project is licensed under the MIT License.
 
 ---
 
-Glowdrop is your one-stop beauty service and product app, built to provide a streamlined experience in booking services, discovering products, and maintaining a beauty routine. Enjoy the ultimate in beauty and self-care with Glowdrop!
+Glowdrop is your one-stop beauty service and product app, built to provide a streamlined experience in booking services, discovering products, and maintaining a beauty routine. 
 
 ---
